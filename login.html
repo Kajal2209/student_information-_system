@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+         <link href="css/style.css" rel="stylesheet">
+        <style>
+            #main{
+                margin: auto;
+                padding: 15px;
+                text-align: center;
+                min-height: 500px;
+                width:80%;
+
+            }
+            table{
+                margin: auto;
+                width: 70%;
+            }
+            td{
+                padding: 10px;
+            }
+        </style>
+       
+    </head>
+    <body>
+      
+<!-- Header -->
+<header id="header">
+    <h1><a href="index.php">Student Information System</a></h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="registration.html" class="button special">Sign Up</a></li>
+        </ul>
+    </nav>
+</header>
+
+        <div id="main">
+            <h1 class="button alt">LOGIN HERE : </h1>
+            <form action="login.php" method="POST">
+                <table>
+                    <tr>
+                        <td>Email : </td>
+                        <td> <input type="text" name="email" value="" placeholder="Enter your email" required=""/></td>
+                    </tr>
+                    <tr>
+                        <td>Password : </td>
+                        <td> <input type="password" name="password" value="" placeholder="Enter your password" required=""/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit"name="submit" value="Login" />
+                        </td>
+                    </tr>
+                </table>
+                <br><br>
+                <a href="forgot_password.php" class="button alt">Forget Password ? </a>
+                <br><hr>
+                <a href="registration.php" class="button alt">Do not have an Account ? Register Now </a>
+
+            </form>
+         
+        </div>
+
+        <!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        
+        <div class="row">
+            <div class="8u 12u$(medium)">
+                <ul class="copyright">
+                    <li>&copy; Student Information System. All rights reserved.</li>
+                    <li>Design &amp; Developed By: Kajal Paliwal & Harsh Vardhan</li>
+                </ul>
+            </div>
+            <div class="4u$ 12u$(medium)">
+                <ul class="icons">
+                    <li>
+                        <a class="icon rounded fa-facebook"><span class="label">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a class="icon rounded fa-twitter"><span class="label">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a class="icon rounded fa-google-plus"><span class="label">Google+</span></a>
+                    </li>
+                    <li>
+                        <a class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    </body>
+</html>

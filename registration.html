@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link href="css/style.css" rel="stylesheet">
+        
+        <style>
+            #main{
+                margin: auto;
+                padding: 15px;
+                text-align: center;
+                min-height: 500px;
+                width:80%;
+
+            }
+            table{
+                margin: auto;
+                text-align: justify;
+                width: 75%;
+            }
+            td{
+                padding: 10px;
+            }
+            .error{
+                color: red;
+                font-size: 1.2em;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <!-- Header -->
+<header id="header">
+    <h1><a href="index.html">Student Information System</a></h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="registration.html" class="button special">Sign Up</a></li>
+        </ul>
+    </nav>
+</header>
+        <div id="main">
+            <h1 class="button alt">Registration Form : </h1>
+                <form action="registration.php" method="POST">
+                    <table>
+                        <tr>
+                            <td>Email : </td>
+                            <td> <input type="text" name="email" value="info@example.com" placeholder="Enter your email"  /></td>
+                            <td> <span class="error"> * </span>
+                                
+                                <span class="button alt small"></span>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Name : </td>
+                            <td> <input type="text" name="name" value="Enter your name" placeholder="Enter your Name" /></td>
+                            <td> <span class="error"> * </span>
+                                
+                                <span class="button alt small">  </span>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Password : </td>
+                            <td> <input type="password" name="password" value="Enter your Password" placeholder="Enter your password" /></td>
+                            <td> <span class="error"> * </span>
+                                
+                                <span class="button alt small"> </span>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Confirm Password : </td>
+                            <td> <input type="password" name="confirm_password" value="" placeholder="Re-enter your password" /></td>
+                            <td> <span class="error"> * </span>
+                               
+                                <span class="button alt small">  </span>
+                               
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Security Question : </td>
+                            <td> <select name="question">
+                                    <option>What is your favourite movie?</option>
+                                    <option>What is the name of your first school?</option>
+                                    <option>What is your mother's first name?</option>
+                                    <option>What is your favourtie pet?</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td>Answer : </td>
+                            <td> <input type="text" name="answer" value="answer" placeholder="Enter your answer" /></td>
+                            <td> <span class="error"> * </span>
+                               
+                                <span class="button alt small">  </span>
+                               
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="text-align:center">
+                                <input type="submit" name="submit" value="Sign Up" />
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <a href="login.php" class="button alt">Already Registered? Login Here </a>
+
+                </form>
+                <h1 class="button disabled">Registration Successful!</h1><br>
+                <h1 class="button disabled">An email has been sent to you with verification code! Click on the link or copy the verification code and verify here..</h1><br>
+                <a href="verify_email.php" class="button">Verify Email</a>
+
+        </div>
+        
+        <!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        
+        <div class="row">
+            <div class="8u 12u$(medium)">
+                <ul class="copyright">
+                    <li>&copy; Student Information System. All rights reserved.</li>
+                    <li>Design &amp; Developed By: Kajal Paliwal & Harsh Vardhan</li>
+                </ul>
+            </div>
+            <div class="4u$ 12u$(medium)">
+                <ul class="icons">
+                    <li>
+                        <a class="icon rounded fa-facebook"><span class="label">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a class="icon rounded fa-twitter"><span class="label">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a class="icon rounded fa-google-plus"><span class="label">Google+</span></a>
+                    </li>
+                    <li>
+                        <a class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    </body>
+</html>
